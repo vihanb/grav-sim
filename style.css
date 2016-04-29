@@ -1,0 +1,66 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    color: white;
+
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background: url(../PRS/bg.jpg);
+    background-size: cover;
+}
+
+#preview {
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3 { margin: 0.2rem; font-family: 'Kalam'; }
+
+#control {
+    position: fixed;
+
+    top: 10px;
+    right: 10px;
+
+    padding: 0.5rem;
+
+    border: 5px solid rgba(40, 60, 85, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+
+    border-radius: 4px;
+    box-shadow: 0 0 4px #222;
+
+    min-width: 450px;
+}
+
+.control-panel-item {
+    cursor: pointer;
+}
+
+.control-panel-item > img {
+    height: 1em;
+}
+
+.control-panel-item > span {
+    line-height: 1em;
+}
+
+.add-control {
+    padding-top: 6px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.opt-desc {
+    padding-left: 5px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="resizer.js"></script>
+
+        <script src='jscolor.min.js'></script>
+
+        <script src="system.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,400italic|Kalam:700,400' rel='stylesheet'>
+    </head>
+    <body>
+        <canvas id="preview"></canvas>
+
+        <div id="control">
+            <h2>Control your Solar System</h2>
+            <sup><b>Note:</b> Distances between bodies are a million smaller in order for everything to fit.</sup>
+            
+            <div> <input onclick="window.Trails = this.checked;" type="checkbox"><label>Show Trails?</label> </div>
+            <div>
+                <input onclick="document.body.setAttribute('style', this.checked ? '' : 'background: black')"
+                       checked=checked type="checkbox"><label>Show Background?</label>
+            </div>
+            
+            <div id="control-panel"></div>
+            <hr>
+            <div id="control-options">
+            </div>
+        </div>
+    </body>
+</html>
